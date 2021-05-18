@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<SplitPane dividerPositions="0.5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="400.0" minWidth="700.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Catalog.scenes.add.addController">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+         <children>
+            <TableView fx:id="tableGame" layoutX="199.0" layoutY="-18.0" prefHeight="196.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <columns>
+                <TableColumn fx:id="colName" prefWidth="127.0" text="Name" />
+                <TableColumn fx:id="colPlatform" prefWidth="83.0" text="Platform" />
+                  <TableColumn fx:id="colYear" prefWidth="61.0" text="Year" />
+                  <TableColumn fx:id="colCategory" prefWidth="134.0" text="Category" />
+                  <TableColumn fx:id="colOther" prefWidth="145.0" text="Format/Size/Original" />
+                  <TableColumn fx:id="colDownload" prefWidth="147.0" text="Download Platform" />
+              </columns>
+            </TableView>
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #FFF791;">
+         <children>
+            <TextField fx:id="txtName" layoutX="20.0" layoutY="28.0" promptText="Name" />
+            <TextField fx:id="txtPlatform" layoutX="190.0" layoutY="28.0" promptText="Platform" />
+            <TextField fx:id="txtYear" layoutX="358.0" layoutY="28.0" promptText="Year" />
+            <ComboBox fx:id="comboCategory" layoutX="525.0" layoutY="28.0" prefWidth="150.0" promptText="Category" />
+            <ComboBox fx:id="comboDisk" layoutX="20.0" layoutY="110.0" prefWidth="150.0" promptText="Format" />
+            <Button layoutX="35.0" layoutY="74.0" mnemonicParsing="false" onAction="#addDisk" text="Add or Modify Disk" textFill="RED" />
+            <Button layoutX="284.0" layoutY="74.0" mnemonicParsing="false" onAction="#addDigital" text="Add or Modify Digital" textFill="RED" />
+            <Button layoutX="527.0" layoutY="74.0" mnemonicParsing="false" onAction="#addCartridge" text="Add or Modify Cartridge" textFill="RED" />
+            <TextField fx:id="txtDigitalSize" layoutX="275.0" layoutY="111.0" promptText="Size" />
+            <TextField fx:id="txtDigitalDownload" layoutX="275.0" layoutY="150.0" promptText="Download Platform" />
+            <ComboBox fx:id="comboCartridge" layoutX="525.0" layoutY="110.0" prefWidth="150.0" promptText="Original/Emulated" />
+            <Button layoutX="181.0" layoutY="165.0" mnemonicParsing="false" onAction="#goBack" text="Go Back" textFill="RED" />
+         </children></AnchorPane>
+  </items>
+</SplitPane>

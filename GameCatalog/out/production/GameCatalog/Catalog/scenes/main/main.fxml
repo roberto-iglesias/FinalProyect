@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="400.0" style="-fx-background-color: #FFF791;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Catalog.scenes.main.Controller">
+   <children>
+      <Label layoutX="137.0" layoutY="105.0" text="Choose an option" textFill="RED">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Button layoutX="132.0" layoutY="161.0" mnemonicParsing="false" onAction="#goToAdd" text="Add or Modify a Game" textFill="RED" />
+      <Button layoutX="106.0" layoutY="209.0" mnemonicParsing="false" onAction="#goToOther" text="Search, delete and other options" textFill="RED" />
+      <Label layoutX="35.0" layoutY="36.0" text="Wellcome to the Game Catalog" textFill="#661f9c">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<SplitPane dividerPositions="0.5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Catalog.scenes.other.otherController">
+    <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+            <children>
+                <TableView fx:id="tableGame" layoutX="199.0" layoutY="-18.0" prefHeight="196.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                        <TableColumn fx:id="colName" prefWidth="127.0" text="Name" />
+                        <TableColumn fx:id="colPlatform" prefWidth="83.0" text="Platform" />
+                        <TableColumn fx:id="colYear" prefWidth="61.0" text="Year" />
+                        <TableColumn fx:id="colCategory" prefWidth="134.0" text="Category" />
+                        <TableColumn fx:id="colOther" prefWidth="145.0" text="Format/Size/Original" />
+                        <TableColumn fx:id="colDownload" prefWidth="147.0" text="Download Platform" />
+                    </columns>
+                </TableView>
+            </children></AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #FFF791;">
+         <children>
+            <TextField fx:id="txtSearch" layoutX="81.0" layoutY="61.0" promptText="Name or text to search" />
+            <ComboBox fx:id="comboCat" layoutX="420.0" layoutY="61.0" prefWidth="150.0" promptText="Category" />
+            <Button layoutX="330.0" layoutY="14.0" mnemonicParsing="false" onAction="#sort" text="Sort" textFill="RED" />
+            <Button layoutX="424.0" layoutY="111.0" mnemonicParsing="false" onAction="#change" text="Change Game Category" textFill="RED" />
+            <Button layoutX="179.0" layoutY="111.0" mnemonicParsing="false" onAction="#delete" text="Delete" textFill="RED" />
+            <Button layoutX="594.0" layoutY="61.0" mnemonicParsing="false" onAction="#show" text="Show group" textFill="RED" />
+            <Button layoutX="81.0" layoutY="111.0" mnemonicParsing="false" onAction="#search" text="Search" textFill="#fc0000" />
+            <Button layoutX="319.0" layoutY="157.0" mnemonicParsing="false" onAction="#goBack" text="Go Back" textFill="#ff0202" />
+         </children></AnchorPane>
+    </items>
+</SplitPane>
